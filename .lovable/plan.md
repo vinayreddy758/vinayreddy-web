@@ -1,70 +1,100 @@
-## Direction
+# Portfolio Refinement Plan — Vinay Reddy AD
 
-Build the chosen "Editorial Bold" direction as a single-page premium portfolio for a freelance web designer/developer. Tone: confident, trustworthy, agency-grade — never developer-resume.
+Preserve existing visual identity (colors, typography, layout, Reveal animations). Content, structure and polish only — no redesign. Copy across the site will be tightened: shorter sentences, less filler, same meaning.
 
-Per the user's note, frame it as a **personal portfolio** with a clear "the person behind the work" block (photo + name + role + short bio) — not anonymous studio branding.
+## Personal details (wired everywhere)
+- Name: **Vinay Reddy AD**
+- Phone / WhatsApp: **+91 93532 61314**
+- Email: **vinayad1776@gmail.com**
+- Portrait: uploaded photo → `src/assets/portrait.jpg`
+- Wordmark in `Nav` + `Footer`: "Vinay Reddy AD"
 
-## Tokens (locked from the chosen direction)
+## Hero (`Hero.tsx`)
+- 2-line paragraph, tightened.
+- Primary CTA **Book a Free Consultation** → `#contact`. Secondary **View Selected Work** → `#work`.
+- Trust bar: Replies within 24h · Mobile-first · SEO Ready · Based in India · Serving clients worldwide.
+- Reduce bottom padding on mobile.
 
-- Primary `#2563EB`, accent `#F97316` (used sparingly for emphasis only), neutrals white/black/zinc.
-- Type: Inter (400/600/800) + JetBrains Mono for small labels.
-- Rounded-2xl cards, soft shadows, generous whitespace.
-- Subtle fade-up scroll reveal, hover lift on cards.
+## About (`About.tsx`)
+- Real portrait.
+- Badge: **Founder — Freelance Web Designer & Developer**.
+- Rewrite body (short, confident, in Vinay's voice — 2–3 tight paragraphs, not 5).
+- Add small **Why I Started** block: one short paragraph on helping small businesses build credibility online.
 
-Tokens go into `src/styles.css` (oklch where required by template) and Inter + JetBrains Mono load via a `<link>` in `__root.tsx` head (per Tailwind v4 rule against remote `@import`).
+## Services (`Services.tsx`)
+- Keep 11 cards + styling.
+- Rewrite each description to one outcome-focused line (Business = trust + enquiries, Clinic = patient confidence + bookings, Landing = single conversion goal, Restaurant = menus/ambience + reservations, etc.).
 
-## Page structure (single route `/`)
+## Projects (`Projects.tsx`)
+- Keep case-study layout, image, hover.
+- Replace Problem/Solution wall of text with a compact meta block per project: **Industry · Goal · Pages Designed · Key Features**.
+- Checklist row: Responsive · SEO Ready · Contact Forms · Performance Optimized.
+- Two buttons: **Visit Website** (external), **View Case Study** (anchors to project detail on same section — placeholder `#`).
+- Remove any implied fake results.
 
-1. **Sticky nav** — wordmark left, "Start a project" pill right. Anchor links to sections.
-2. **Hero** — Editorial headline ("Building high-performing websites for *ambitious* small businesses."), supporting line, primary CTA → contact, secondary "See work" → projects.
-3. **About / Personal block** *(new per user direction)* — left: portrait photo placeholder (square, rounded-2xl); right: mono eyebrow "About", name "[Your Name]", role line, the 5-paragraph bio verbatim, small tag row (Freelance · Available worldwide · Replies in 24h). Photo is a `data-lov-image-placeholder` so a real portrait is generated.
-4. **What I Do (Services)** — modern card grid, all 11 items: Business Websites, Landing Pages, Clinic Websites, Restaurant Websites, Portfolio Websites, Website Redesign, Website Maintenance, Responsive Design, SEO-Friendly Development, WhatsApp Integration, Contact Forms.
-5. **Featured Projects** — dark section (`bg-neutral-900`), 3 large project cards stacked, each with screenshot, category chip, accent chip, title, problem→solution copy, key feature bullets, "Visit Website ↗" link:
-   - Trust Advocate → https://trust-advocate-web.lovable.app/
-   - GlowCare → https://glowcare-site.lovable.app/
-   - Prestige Events → https://prestigeeevents.com/about.php
-6. **Industries Served** — chip grid: Clinics, Doctors, Salons, Restaurants, Law Firms, Real Estate, Gyms, Hotels, Educational Institutions, Local Businesses, Startups.
-7. **My Approach (Process)** — clean numbered timeline, all 7 steps (Understand → Plan UX → Design → Develop → Test → Launch → Support).
-8. **Why Work With Me** — premium feature cards, all 8 items (Business-focused, Premium design, Mobile-first, Fast, SEO-ready, Clean UX, Reliable communication, Post-launch support).
-9. **Pricing** — three transparent tiers (Starter / Professional / Custom) with what's included. No fake numbers presented as guarantees — clearly framed as "from".
-10. **FAQ** — accordion with ~6 honest questions (timeline, revisions, content, hosting, support, payments).
-11. **Contact** — brand-blue panel, headline "Let's Build a Website That Grows Your Business", form (name, email, business type, message), submit button. Form is client-side only (toast on submit) — no backend wiring requested.
-12. **Footer** — wordmark, nav links, copyright. No fake socials/testimonials/stats.
+## Why Work With Me (`WhyMe.tsx`)
+- 8 one-line premium cards: Direct Communication · No Outsourcing · Premium UI · Fast Performance · Mobile Optimized · SEO Ready · Long-Term Support · Transparent Pricing.
 
-## Component breakdown
+## Process (`Process.tsx`)
+- 7 steps with lucide icons + one concise line each:
+  Discovery (Search) · Strategy (Compass) · Design (Palette) · Development (Code2) · Testing (ShieldCheck) · Launch (Rocket) · Support (LifeBuoy).
 
-- `src/routes/index.tsx` — composes sections, sets per-page SEO (title, description, og:title, og:description).
-- `src/components/site/` — `Nav.tsx`, `Hero.tsx`, `About.tsx`, `Services.tsx`, `Projects.tsx`, `Industries.tsx`, `Process.tsx`, `WhyMe.tsx`, `Pricing.tsx`, `FAQ.tsx`, `Contact.tsx`, `Footer.tsx`.
-- Reuse existing shadcn `accordion`, `button`, `input`, `textarea`, `sonner` (toast).
-- Subtle scroll-reveal via a small `useInView` + `IntersectionObserver` hook (no new dependency).
+## Trust (new `Trust.tsx`, placed before Pricing)
+- Headline: **Why Businesses Trust Me**.
+- 6 short cards: Responsive on Every Device · Performance Focused · Clean Modern Design · SEO Best Practices · Clear Communication · Support After Launch.
 
-## Image assets
+## Pricing (`Pricing.tsx`) — full rewrite of tier content
+Section title: **Simple & Transparent Pricing**. Each card: **Best for**, **Includes**, **Delivery**, CTA **Request Quote** (→ `#contact`).
 
-Generate with `imagegen` and save under `src/assets/`:
-- `portrait.jpg` — professional male/neutral portrait, soft natural light, neutral background (about section).
-- `trust-advocate.jpg`, `glowcare.jpg`, `prestige-events.jpg` — clean device/browser mockups reflecting each site's category.
+**Essential Website — Starting at ₹8k**
+- Best for: New businesses, personal brands, landing pages
+- Includes: 1–3 pages · Mobile responsive · Contact form · WhatsApp integration · Basic SEO
+- Delivery: 5–7 days
 
-All imported as ES6 image imports, no remote URLs in JSX.
+**Business Website — Starting at ₹12k · Most Popular**
+- Best for: Clinics, salons, restaurants, local businesses
+- Includes: Up to 8 pages · Custom design · Contact forms · WhatsApp integration · Google Maps · Basic SEO · Speed optimization · 30 days support
+- Delivery: 7–14 days
 
-## Copy guardrails
+**Premium Website — Starting at ₹25k**
+- Best for: Established businesses needing a stronger online presence
+- Includes: Everything in Business · Advanced animations · Blog or CMS · Booking or enquiry system · Premium UI/UX · Performance optimization
 
-- Never mention HTML/CSS/JS/React/Next, "passionate developer", "coding since childhood", "available for hire", "student", "beginner".
-- No invented testimonials, awards, client logos, or numeric stats.
-- Confident, value-led wording focused on trust, enquiries, growth.
+Small note under the grid:
+> *Domain, hosting, business email, premium third-party services and annual renewals are billed separately and remain the client's responsibility.*
+
+## FAQ
+- Remove `FAQ` section, import and nav/footer links.
+
+## Contact (`Contact.tsx`)
+- Headline: **Let's Build Something Your Customers Will Trust.**
+- Short 1-line intro; average reply within 24 hours.
+- Contact block: Email `vinayad1776@gmail.com` · Phone `+91 93532 61314` · WhatsApp button.
+- Form **Submit Enquiry** → opens WhatsApp deep-link `https://wa.me/919353261314?text=…` with prefilled name / business / budget / message (validated required fields; no backend/toast flow).
+
+## Footer (`Footer.tsx`)
+- Wordmark: Vinay Reddy AD.
+- Nav: Projects · Services · Process · Pricing · Contact.
+- Contact: Email · Phone · LinkedIn · GitHub (placeholder `#` where unknown).
+- Back to Top · Copyright year.
+
+## Nav (`Nav.tsx`)
+- Wordmark update, remove FAQ, primary CTA "Book a Free Consultation".
+
+## Responsiveness & spacing
+- Trim vertical section padding on mobile (`py-24 → py-16 md:py-24`).
+- Guard header rows with `min-w-0` / `truncate` / `shrink-0`.
+- Verify 44px min touch targets, check at 360px preview.
+
+## SEO / head
+- Update `routes/index.tsx` (and `__root.tsx` defaults where applicable): title/description feature Vinay Reddy AD — Freelance Web Designer & Developer for small businesses.
+
+## Animations
+- Keep existing `Reveal` fade-up + subtle hover. Nothing new, nothing flashy.
 
 ## Out of scope
+- No branding/typography/color changes.
+- No fake testimonials, clients, stats, awards or experience claims.
+- No backend — WhatsApp deep-link handles enquiries.
 
-- No backend, no Lovable Cloud, no auth, no DB — purely a marketing site.
-- Contact form shows a success toast; no email sending.
-- Dark-mode toggle not requested; light theme only.
-
-## Technical notes
-
-- TanStack Start route in `src/routes/index.tsx` replaces the placeholder.
-- Fonts via `<link>` in `__root.tsx` head.
-- Single `<h1>` (hero), semantic section/h2 headings, alt text on all images.
-- Responsive: mobile-first matching the chosen prototype, expanded to comfortable desktop grids at `md:`/`lg:`.
-
-## One open detail
-
-I'll need a real name to put on the About block. I'll use the placeholder **"Your Name"** with a `{/* TODO: replace */}` comment so you can swap it in one place — unless you'd like me to use a specific name now.
+**Files touched:** `Hero.tsx`, `About.tsx`, `Services.tsx`, `Projects.tsx`, `WhyMe.tsx`, `Process.tsx`, `Pricing.tsx`, `Contact.tsx`, `Footer.tsx`, `Nav.tsx`, `routes/index.tsx`, `routes/__root.tsx`, new `Trust.tsx`, replace `src/assets/portrait.jpg`. Delete `FAQ.tsx`.
