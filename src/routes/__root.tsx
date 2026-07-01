@@ -81,9 +81,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Premium, high-converting websites for small businesses — clinics, restaurants, salons, law firms and local brands." },
       { name: "author", content: "Vinay Reddy AD" },
       { property: "og:title", content: "Vinay Reddy AD — Freelance Web Designer & Developer" },
-      { property: "og:description", content: "Premium websites for small businesses. Mobile-first, SEO ready, built to earn trust." },
+      { property: "og:description", content: "Premium, high-converting websites for small businesses — clinics, restaurants, salons, law firms and local brands." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Vinay Reddy AD — Freelance Web Designer & Developer" },
+      { name: "twitter:description", content: "Premium, high-converting websites for small businesses — clinics, restaurants, salons, law firms and local brands." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9e6d9432-940e-4db6-8b06-dad140663039/id-preview-7aab1846--c6ce7ee8-3935-40be-b536-b356ea23989c.lovable.app-1782912940466.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9e6d9432-940e-4db6-8b06-dad140663039/id-preview-7aab1846--c6ce7ee8-3935-40be-b536-b356ea23989c.lovable.app-1782912940466.png" },
     ],
     links: [
       {
