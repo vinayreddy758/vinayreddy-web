@@ -13,7 +13,7 @@ const reasons = [
 
 export function WhyMe() {
   return (
-    <section className="px-6 py-24 md:py-32">
+    <section className="px-6 py-16 md:py-32">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <div className="font-mono text-[10px] uppercase tracking-widest text-brand mb-4">

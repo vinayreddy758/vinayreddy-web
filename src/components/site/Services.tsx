@@ -1,26 +1,26 @@
 import { Reveal } from "./Reveal";
 
 const services = [
-  { t: "Business Websites", d: "Authoritative sites that turn visitors into qualified leads." },
-  { t: "Landing Pages", d: "Single-purpose pages engineered for one conversion that matters." },
-  { t: "Clinic Websites", d: "Calm, trustworthy experiences with frictionless booking flows." },
-  { t: "Restaurant Websites", d: "Menus, reservations and ambience that travel well to mobile." },
+  { t: "Business Websites", d: "Authoritative sites that turn visitors into qualified enquiries." },
+  { t: "Landing Pages", d: "Single-purpose pages built around one conversion goal." },
+  { t: "Clinic Websites", d: "Calm, trustworthy design with simple booking flows." },
+  { t: "Restaurant Websites", d: "Menus, ambience and reservations — beautiful on mobile." },
   { t: "Portfolio Websites", d: "Editorial showcases for studios, creatives and professionals." },
-  { t: "Website Redesign", d: "Modernising legacy sites without losing your existing equity." },
-  { t: "Website Maintenance", d: "Ongoing care so your site stays fast, secure and current." },
-  { t: "Responsive Design", d: "Pixel-considered layouts from phone to widescreen." },
-  { t: "SEO-Friendly Development", d: "Semantic markup, fast metrics, clean URLs out of the box." },
-  { t: "WhatsApp Integration", d: "Direct-line enquiries from any page in one tap." },
-  { t: "Contact Forms", d: "Form flows tuned for completion rates, not abandonment." },
+  { t: "Website Redesign", d: "Modernise a dated site without losing what already works." },
+  { t: "Website Maintenance", d: "Ongoing care to keep your site fast, secure and current." },
+  { t: "Responsive Design", d: "Considered layouts from phone to widescreen." },
+  { t: "SEO-Friendly Development", d: "Semantic markup, fast metrics and clean URLs by default." },
+  { t: "WhatsApp Integration", d: "One-tap enquiries direct to your phone." },
+  { t: "Contact Forms", d: "Simple forms tuned for completion, not abandonment." },
 ];
 
 export function Services() {
   return (
-    <section id="services" className="px-6 py-24 md:py-32">
+    <section id="services" className="px-6 py-16 md:py-32">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
-            <div>
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 md:mb-14">
+            <div className="min-w-0">
               <div className="font-mono text-[10px] uppercase tracking-widest text-brand mb-4">
                 What I do
               </div>

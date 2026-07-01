@@ -4,25 +4,23 @@ import { Reveal } from "./Reveal";
 const tags = ["Freelance", "Remote, worldwide", "Replies within 24h"];
 
 const paragraphs = [
-  "I'm a freelance web designer and developer focused on building modern, high-performing websites for small businesses.",
-  "I believe a website should do more than look good — it should build trust, generate enquiries, and help businesses grow.",
-  "Every project is designed with usability, speed, responsiveness, and professionalism in mind so that visitors have a great experience on every device.",
-  "Whether it's a clinic, restaurant, salon, law firm, startup, or local business, I create websites that reflect the brand and make a lasting first impression.",
-  "I work closely with every client, understand their goals, and deliver websites that are clean, fast, easy to manage, and built for long-term success.",
+  "I'm Vinay Reddy AD — a freelance web designer and developer helping small businesses build a strong online presence.",
+  "A website should do more than look good. It should build trust, generate enquiries and help your business grow — on every device, at every screen size.",
+  "I work one-to-one with clinics, restaurants, salons, law firms and local brands to deliver clean, fast websites that reflect the business and stand up over time.",
 ];
 
 export function About() {
   return (
-    <section id="about" className="px-6 py-24 md:py-32 bg-neutral-50 border-y border-black/5">
-      <div className="mx-auto max-w-6xl grid md:grid-cols-12 gap-12 md:gap-16 items-start">
+    <section id="about" className="px-6 py-16 md:py-32 bg-neutral-50 border-y border-black/5">
+      <div className="mx-auto max-w-6xl grid md:grid-cols-12 gap-10 md:gap-16 items-start">
         <Reveal className="md:col-span-5">
           <div className="relative">
             <div className="aspect-[4/5] overflow-hidden rounded-3xl bg-neutral-200 shadow-[var(--shadow-soft)]">
               <img
                 src={portrait}
-                alt="Portrait of the designer behind atelier.web"
+                alt="Portrait of Vinay Reddy AD, freelance web designer and developer"
                 width={1024}
-                height={1024}
+                height={1280}
                 loading="lazy"
                 className="size-full object-cover"
               />

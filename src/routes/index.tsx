@@ -9,13 +9,12 @@ import { Industries } from "@/components/site/Industries";
 import { Process } from "@/components/site/Process";
 import { WhyMe } from "@/components/site/WhyMe";
 import { Pricing } from "@/components/site/Pricing";
-import { FAQ } from "@/components/site/FAQ";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 
-const title = "atelier.web — Premium websites for small businesses";
+const title = "Vinay Reddy AD — Freelance Web Designer & Developer";
 const description =
-  "Freelance web designer and developer building modern, high-performing websites for clinics, restaurants, salons, law firms and local businesses.";
+  "I design and build premium, high-converting websites for small businesses — clinics, restaurants, salons, law firms and local brands.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -44,7 +43,6 @@ function Index() {
         <Process />
         <WhyMe />
         <Pricing />
-        <FAQ />
         <Contact />
       </main>
       <Footer />
