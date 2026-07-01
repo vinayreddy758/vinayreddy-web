@@ -26,9 +26,9 @@ export function Nav() {
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
-        <a href="#top" className="font-extrabold tracking-tighter text-xl">
-          atelier<span className="text-brand">.web</span>
+      <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between gap-4">
+        <a href="#top" className="font-extrabold tracking-tight text-lg md:text-xl shrink-0 min-w-0 truncate">
+          Vinay Reddy <span className="text-brand">AD</span>
         </a>
         <div className="hidden md:flex items-center gap-8 text-sm text-neutral-600">
           {links.map((l) => (
@@ -39,14 +39,14 @@ export function Nav() {
         </div>
         <a
           href="#contact"
-          className="hidden md:inline-flex items-center gap-2 bg-foreground text-background px-4 py-2 rounded-full text-sm font-medium hover:bg-brand transition-colors"
+          className="hidden md:inline-flex items-center gap-2 bg-foreground text-background px-4 py-2 rounded-full text-sm font-medium hover:bg-brand transition-colors shrink-0"
         >
-          Start a project
+          Book a Free Consultation
         </a>
         <button
           aria-label="Toggle menu"
           onClick={() => setOpen((v) => !v)}
-          className="md:hidden size-9 rounded-full bg-foreground text-background grid place-items-center"
+          className="md:hidden size-10 rounded-full bg-foreground text-background grid place-items-center shrink-0"
         >
           <div className="flex flex-col gap-1">
             <span className="block w-4 h-0.5 bg-current" />
@@ -72,7 +72,7 @@ export function Nav() {
               onClick={() => setOpen(false)}
               className="mt-2 inline-flex justify-center bg-foreground text-background px-4 py-3 rounded-full font-medium"
             >
-              Start a project
+              Book a Free Consultation
             </a>
           </div>
         </div>
