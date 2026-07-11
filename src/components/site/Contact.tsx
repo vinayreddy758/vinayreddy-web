@@ -1,9 +1,9 @@
 import { type FormEvent } from "react";
 import { Reveal } from "./Reveal";
 
-const PHONE_DISPLAY = "+91 93532 61314";
-const PHONE_WA = "919353261314";
-const EMAIL = "vinayad1776@gmail.com";
+const PHONE_DISPLAY = "+91 82968 67787";
+const PHONE_WA = "918296867787";
+const EMAIL = "zero0frame@gmail.com";
 
 export function Contact() {
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -35,7 +35,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="px-6 py-16 md:py-32 bg-brand text-white">
+    <section id="contact" className="px-6 pt-16 pb-24 md:py-32 bg-brand text-white">
       <div className="mx-auto max-w-6xl grid md:grid-cols-12 gap-10 md:gap-16">
         <Reveal className="md:col-span-5">
           <div className="font-mono text-[10px] uppercase tracking-widest text-white/70 mb-5">
