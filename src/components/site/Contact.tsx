@@ -100,7 +100,7 @@ export function Contact() {
             </div>
             <button
               type="submit"
-              className="mt-6 w-full inline-flex items-center justify-center gap-2 bg-foreground text-background font-semibold py-4 rounded-full hover:bg-brand transition-colors"
+              className="mt-6 w-full inline-flex items-center justify-center gap-2 bg-foreground text-background font-semibold px-6 py-4 rounded-full hover:bg-brand transition-colors"
             >
               Submit enquiry on WhatsApp
               <span aria-hidden>→</span>
