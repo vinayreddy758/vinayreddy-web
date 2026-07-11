@@ -1,9 +1,9 @@
 import { type FormEvent } from "react";
 import { Reveal } from "./Reveal";
 
-const PHONE_DISPLAY = "+91 93532 61314";
-const PHONE_WA = "919353261314";
-const EMAIL = "vinayad1776@gmail.com";
+const PHONE_DISPLAY = "+91 82968 67787";
+const PHONE_WA = "918296867787";
+const EMAIL = "zero0frame@gmail.com";
 
 export function Contact() {
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
