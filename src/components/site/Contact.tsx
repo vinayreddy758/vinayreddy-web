@@ -3,7 +3,7 @@ import { Reveal } from "./Reveal";
 
 const PHONE_DISPLAY = "+91 82968 67787";
 const PHONE_WA = "918296867787";
-const EMAIL = "zero0frame@gmail.com";
+const EMAIL = "zero0frame0@gmail.com";
 
 export function Contact() {
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
