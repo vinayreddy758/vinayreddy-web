@@ -10,8 +10,8 @@ export function Footer() {
             Premium websites for small businesses.
           </p>
           <div className="mt-3 flex flex-col gap-1 text-sm text-neutral-600">
-            <a href="mailto:zero0frame@gmail.com" className="hover:text-foreground break-all">
-              zero0frame@gmail.com
+            <a href="mailto:zero0frame0@gmail.com" className="hover:text-foreground break-all">
+              zero0frame0@gmail.com
             </a>
             <a href="tel:+918296867787" className="hover:text-foreground">
               +91 82968 67787
