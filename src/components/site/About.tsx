@@ -41,6 +41,10 @@ export function About() {
           <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight leading-[1.05] text-balance">
             Helping small businesses build a strong online presence.
           </h2>
+          <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-white border border-black/5 px-3.5 py-1.5 text-sm font-medium text-neutral-700">
+            <span className="size-1.5 rounded-full bg-brand" />
+            Founder — Vinay Reddy AD
+          </div>
 
           <div className="mt-8 space-y-5 text-neutral-700 leading-relaxed text-[17px] text-pretty">
             {paragraphs.map((p, i) => (
