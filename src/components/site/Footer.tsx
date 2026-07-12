@@ -4,7 +4,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         <div className="min-w-0">
           <div className="font-extrabold tracking-tight text-lg md:text-xl">
-            Vinay Reddy <span className="text-brand">AD</span>
+            zero<span className="text-brand">frame</span>
           </div>
           <p className="text-sm text-neutral-500 mt-1">
             Premium websites for small businesses.
@@ -26,7 +26,7 @@ export function Footer() {
           <a href="#contact" className="hover:text-foreground">Contact</a>
         </div>
         <div className="text-xs text-neutral-400 font-mono uppercase tracking-widest">
-          © {new Date().getFullYear()} Vinay Reddy AD
+          © {new Date().getFullYear()} zeroframe
         </div>
       </div>
     </footer>
