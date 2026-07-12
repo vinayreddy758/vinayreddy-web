@@ -28,7 +28,7 @@ export function Nav() {
     >
       <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between gap-4">
         <a href="#top" className="font-extrabold tracking-tight text-lg md:text-xl shrink-0 min-w-0 truncate">
-          Vinay Reddy <span className="text-brand">AD</span>
+          zero<span className="text-brand">frame</span>
         </a>
         <div className="hidden md:flex items-center gap-8 text-sm text-neutral-600">
           {links.map((l) => (

@@ -12,7 +12,7 @@ import { Pricing } from "@/components/site/Pricing";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 
-const title = "Vinay Reddy AD — Freelance Web Designer & Developer";
+const title = "zeroframe — Freelance Web Designer & Developer";
 const description =
   "I design and build premium, high-converting websites for small businesses — clinics, restaurants, salons, law firms and local brands.";
 
