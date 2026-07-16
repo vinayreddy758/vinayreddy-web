@@ -27,12 +27,13 @@ const tiers: Tier[] = [
   },
   {
     name: "Business Website",
-    price: "Starting at ₹12k",
+    price: "Starting at ₹15k",
     blurb: "A complete website for growing local businesses.",
     bestFor: ["Clinics", "Salons", "Restaurants", "Local businesses"],
     includes: [
       "Up to 8 pages",
       "Custom design",
+      "Admin panel to edit content",
       "Contact forms",
       "WhatsApp integration",
       "Google Maps",
@@ -43,6 +44,7 @@ const tiers: Tier[] = [
     delivery: "7–14 days",
     featured: true,
   },
+
   {
     name: "Premium Website",
     price: "Starting at ₹25k",
