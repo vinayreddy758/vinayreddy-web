@@ -4,7 +4,7 @@ Welcome to my portfolio repository! I'm **Vinay Reddy**, a freelance web develop
 
 My goal is to help businesses establish a professional online presence through clean design, user-friendly experiences, and practical web solutions.
 
-🌐 **[Visit My Portfolio Website](https://vinayreddy-web.lovable.app/)**
+🌐 **[Visit My Portfolio freelance Website](https://zeroframe0.vercel.app/)**
 
 ## 💻 Skills & Technologies
 
@@ -31,7 +31,7 @@ Through ZeroFrame, I work on:
 ### 1. GlowCare — Skincare Clinic Website
 A website concept for a skincare clinic, focused on presenting treatments and creating a professional online experience.
 
-- [Live Website](https://glowcare-site.lovable.app/)
+- [Live Website](https://glowcare-site.vercel.app/)
 - [GitHub Repository](https://github.com/vinayreddy758/glowcare-site)
 
 ### 2. Trust Advocate — Legal & Advocacy Website
